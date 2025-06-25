@@ -1,0 +1,55 @@
+# .NET build artifacts
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code settings
+.vscode/
+.history/
+
+# ASP.NET Secrets folder (if used)
+**/appsettings.Development.json
+secrets.json
+
+# Logs
+*.log
+logs/
+
+# Database local files (EF Core)
+*.mdf
+*.ldf
+*.db
+
+# EF Core Migrations snapshots (optional, only if generated temporarily)
+Migrations/*ModelSnapshot.cs
+
+# Published builds
+publish/
+*.publishsettings
+
+# npm/yarn (if using React/Angular in front-end)
+node_modules/
+dist/
+build/
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# Git folder itself
+.git/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# dotenv file (if used for secrets)
+.env
+.env.*
