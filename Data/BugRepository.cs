@@ -14,4 +14,11 @@ public static class BugRepository
     {
         return _bugs.FirstOrDefault(b => b.Id == id);
     }
+
+    public static void Add(Bug bug)
+    {
+        bug.Id = _bugs.Count > 0 ? _bugs.Max(b => b.Id) + 1 : 1;
+        bug.CreatedAt = DateTime.Now;
+        _bugs.Add(bug);
+    }
 }
