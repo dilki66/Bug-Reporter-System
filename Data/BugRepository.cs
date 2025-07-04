@@ -21,4 +21,15 @@ public static class BugRepository
         bug.CreatedAt = DateTime.Now;
         _bugs.Add(bug);
     }
+
+    public static void Update(Bug updatedBug)
+    {
+        var Editbug = GetById(updatedBug.Id);
+        if (Editbug != null)
+        {
+            Editbug.Title = updatedBug.Title;
+            Editbug.Description = updatedBug.Description;
+            Editbug.Status = updatedBug.Status;
+        }
+    }
 }
