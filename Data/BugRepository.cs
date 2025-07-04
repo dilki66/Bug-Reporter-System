@@ -32,4 +32,13 @@ public static class BugRepository
             Editbug.Status = updatedBug.Status;
         }
     }
+
+    public static void Delete(int id)
+    {
+        var bug = GetById(id);
+        if (bug != null)
+        {
+            _bugs.Remove(bug);
+        }
+    }
 }
